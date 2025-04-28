@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+    .mainbbb.elementor-h6d.elementor-element-ph2.e-el7.box-v5o.e-jhb {
+    background-color: antiquewhite;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
       body {
         /* CSS Variables that may have been missed get put on body */
         --flex-direction: initial;
@@ -1205,7 +1210,8 @@
 
       @media (min-width: 768px) {
         .elementor-doy.elementor-element-zv1 {
-          --width: 71.881%;
+          --width: 52.2%;
+          margin-top: -60px;
         }
       }
 
@@ -1964,7 +1970,6 @@
           );
         }
 /* Sticky Container Styling */
-/* Sticky Container Styling */
 .sticky-bottom-container {
   position: fixed;
   bottom: 0;
@@ -1976,61 +1981,13 @@
   z-index: 10000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   animation: slideUp 1s ease-out;
-  height: 80px; /* Increased height */
+  height: 45px; /* Increased height */
   border-radius: 10px 10px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  overflow: visible; /* Allow animated elements to breathe */
-}
-
-/* Text Styling */
-.sticky-text {
-  flex: 1;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-  position: relative;
-}
-
-.sticky-text p {
-  display: none;
-  font-size: 20px; /* Slightly larger text */
-  color: white;
-  font-weight: bold;
-  margin: 0;
-  padding: 5px 10px;
-  letter-spacing: 1px;
-  animation: fadeInBounce 5s ease-in-out infinite;
-  white-space: nowrap;
-}
-
-/* Fade In, Bounce, and Scale Animation */
-@keyframes fadeInBounce {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.5) rotate(5deg);
-  }
-  25% {
-    opacity: 0.7;
-    transform: translateY(-10px) scale(1.1) rotate(-5deg);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotate(0);
-  }
-  75% {
-    opacity: 0.7;
-    transform: translateY(10px) scale(1.1) rotate(5deg);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.5) rotate(-5deg);
-  }
 }
 
 /* Slide-up animation for the sticky container */
@@ -2060,6 +2017,38 @@
 .sticky-btn:hover {
   background-color: #ff3b3f;
   color: #fff;
+}
+
+/* Text Styling */
+.sticky-text {
+  flex: 1;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.sticky-text p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
         .elementor-561229 .elementor-h6d.elementor-element-55s::before,
@@ -2427,7 +2416,7 @@
 
         .elementor-h6d.elementor-element-g9x .title-to4 {
           font-family: "Poppins", Sans-serif;
-          font-size: 40px;
+          font-size: 45px;
           font-weight: 800;
           color: #ffc60080;
         }
@@ -2440,7 +2429,7 @@
 
         .elementor-h6d.elementor-element-o8a .title-to4 {
           font-family: "Poppins", Sans-serif;
-          font-size: 35px;
+          font-size: 45px;
           font-weight: 800;
           color: #ffc60080;
         }
@@ -2452,7 +2441,7 @@
 
         .elementor-h6d.elementor-element-nk5 .title-to4 {
           font-family: "Poppins", Sans-serif;
-          font-size: 35px;
+          font-size: 40px;
           font-weight: 800;
           color: #ffc60080;
         }
@@ -2565,7 +2554,7 @@
       a.accordion-iq3 {
         font-family: sans-serif;
         font-size: 19px !important;
-        line-height: 19px;
+        line-height: 5vh;
         font-weight: 500;
         text-decoration: none;
       }
@@ -2628,9 +2617,6 @@
           flex-shrink: var(--flex-shrink);
           order: var(--order);
         }
-        .elementor-64z.elementor-element-pix.elementor-d3z {
-    margin-top: -33px;
-}
         button.sticky-btn.right-btn {
     margin-right: 75px;
     margin-top: 41px;
@@ -2904,14 +2890,10 @@
           color: #ffffff;
         }
       }
-      .phase {
-    gap: 10px;
-    margin: auto;
-    display: flex
-;
-    width: 69vw;
-    margin-bottom: 10px;
-    justify-content: center;
+      button#grab {
+    width: 100% !important;
+    height: 7vh;
+    font-size: 28px !important;
 }
       .content-zew {
         max-height: 0;
@@ -2935,23 +2917,237 @@
         text-decoration: line-through;
         color: yellow;
       }
+      .redblock {
+    background-color: transparent;
+    background-image: linear-gradient(160deg, #6c001d 0%, #ed1c24 100%);
+}
+h2.title-8lo {
+    font-family: "Poppins", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #ffffff;
+}
+.redblock {
+    background-color: transparent;
+    background-image: linear-gradient(160deg, #6c001d 0%, #ed1c24 100%);
+    display: flex;
+    padding-top: 7px;
+    justify-content: center;
+    
+    padding-bottom: 7px;
+}
+.coursee {
+    display: flex
+;
+    justify-content: center;
+    gap: 10px;
+}
+.cm {
+  padding: 5px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.c1, .c2, .c3, .c4 {
+    background-color: #180f11;
+    /* background-color: white; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.fhh.elementor-ymy.elementor-element-16i.e-pey.box-pei.e-5se {
+    height: 40vh !important;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+.faq {
+    display: flex
+;
+    justify-content: center;
+    margin-bottom: 79px;
+}
+h2.title-rdn {
+    font-family: "Poppins", Sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #0A0A0A;
+}
+span.house.hig-aoz {
+    margin-left: -7px;
+}
+span.profes.hig-aoz {
+    margin-left: -5px;
+}
+span.enter.hig-aoz {
+    margin-left: -5px;
+}
+@media (max-width: 768px) {
+  /* CSS rules for phones */
+  .coursee {
+    display: block;
+    
+}
+.elementor-h6d.elementor-element-55s.e-con-b3e.e-el7.e-jhb {
+    margin-bottom: 9px;
+}
+.elementor-h6d.elementor-element-z6l.e-con-b3e.e-el7.e-jhb {
+    margin-bottom: 9px;
+}
+.elementor-h6d.elementor-element-krf.e-con-b3e.e-el7.e-jhb {
+    margin-bottom: 9px;
+}
+.elementor-h6d.elementor-element-6fj .title-to4 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 1.1em;
+    color: #000000;
+}
+.elementor-h6d.elementor-element-g9x .title-to4 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffc60080;
+}
+.elementor-h6d.elementor-element-xvb {
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.elementor-h6d.elementor-element-o8a .title-to4 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffc60080;
+}
+.elementor-h6d.elementor-element-llh {
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.elementor-64z.elementor-element-6q2 .title-kk5 {
+    font-family: "Lato", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 5vh;
+    color: #ffffff;
+}
+.elementor-h6d.elementor-element-nk5 .title-to4 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffc60080;
+}
+.elementor-h6d.elementor-element-omr {
+    text-align: center;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+h2.title-8lo {
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 3vh;
+}
+.elementor-64z.elementor-element-78c .title-kk5 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 2vh;
+    letter-spacing: 0px;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+.elementor-64z.elementor-element-pix .title-kk5 {
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    line-height: 5vh;
+}
+.elementor-doy.fa-p7v .title-7iw {
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    line-height: 5vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.elementor-doy.elementor-element-lkc .title-7iw {
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    line-height: 5vh;
+    font-weight: bold;
+    color: #ed1c24;
+}
+.elementor-element.elementor-element-9d29f44.e-con-full.e-flex.e-con.e-parent.e-lazyloaded {
+    margin-top: 60px;
+}
+button#grab {
+    width: 100% !important;
+    height: 7vh;
+    font-size: 15px;
+}
+h2.title-rdn {
+    font-family: "Poppins", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 5vh;
+    color: #0A0A0A;
+}
+}
+
     </style>
   </head>
   <body>
-    <div class="elementor-t2z elementor-element-ob9 e-mid box-w3y e-75q">
-      <div class="e-con-tkx">
-        <div class="elementor-t2z elementor-element-h2v elementor-k89">
-          <div class="container-s4p">
-            <h2 class="title-8lo">
-              <span style="font-weight: bold">Limited Time Offer:</span>
-              💻 Digital Marketing सीखो अपनी भाषा में और बनो
-              <strong>Career Ready</strong> सिर्फ
-              <span id="style-CosWp" class="style-CosWp">₹2,999</span> में!
-            </h2>
-          </div>
-        </div>
-      </div>
+    <div class="redblock">
+      <h2 class="title-8lo">
+        <span style="font-weight: bold">Limited Time Offer:</span>
+        💻 Digital Marketing सीखो अपनी भाषा में और बनो
+        <strong>Career Ready</strong> सिर्फ
+        <span style="color: yellow; font-weight: 700;">₹3,999
+        </span> में!
+      </h2>
     </div>
+  
     <div class="elementor-64z elementor-element-h5d e-48a box-tjq e-4aq">
       <div class="e-con-o56">
         <div class="elementor-64z elementor-element-9hk e-con-owt e-48a e-4aq">
@@ -2974,8 +3170,7 @@
         </div>
     
         <div
-          class="elementor-64z elementor-element-6q2 elementor-widget__width-8kq elementor-d3z"
-        >
+          class="elementor-64z elementor-element-6q2 elementor-widget__width-8kq elementor-d3z" style="margin-top: 20px; margin-bottom: -6px;" >
           <div class="container-mji">
             <h2 class="title-kk5">
                 Digital Marketing 
@@ -3015,7 +3210,7 @@
         </div>
         <a
           class="elementor-64z elementor-element-qyw e-con-owt btn-shj e-48a e-4aq"
-          href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjU3NDAwMSIsInRvZ2dsZSI6ZmFsc2V9"
+          href="https://beinggsocial.com/checkout/"
         >
           <div class="elementor-64z elementor-element-78c elementor-d3z">
             <div class="container-mji">
@@ -3036,8 +3231,7 @@
           <div class="container-qqh">
             <h2 class="title-7iw">
               DIGITAL MARKETING COURSE
-              <span id="style-movro" class="style-movro">IN HINDI</span> – Be
-              Career Ready!
+              <span id="style-movro" class="style-movro">IN HINDI</span> 
             </h2>
           </div>
         </div>
@@ -3050,18 +3244,21 @@
         </div>
       </div>
     </div>
-
-    <div class="elementor-h6d elementor-element-ph2 e-el7 box-v5o e-jhb">
+    
+    
+    <div class=" mainbbb elementor-h6d elementor-element-ph2 e-el7 box-v5o e-jhb" >
       <div class="e-con-rgr">
         <div class="elementor-h6d elementor-element-6fj elementor-bd4">
           <div class="container-175">
-            <h2 class="title-to4">
+            <h2 class="title-to4" style="margin-bottom: -10px;">
               This Masterclass is for <span class="hig-aoz">Everyone</span> 
             </h2>
           </div>
-          </div>
         </div>
-        <div class="phase">
+      
+
+        <div class="course-main" style="width: 90%;">
+        <div class="coursee">
         <div class="elementor-h6d elementor-element-55s e-con-b3e e-el7 e-jhb">
           <div class="elementor-h6d elementor-element-g9x elementor-bd4">
             <div class="container-175">
@@ -3082,7 +3279,7 @@
           <div class="elementor-h6d elementor-element-o8a elementor-bd4">
             <div class="container-175">
               <h2 class="title-to4">
-                <span class="hig-aoz">Housewives</span>
+                <span class="house hig-aoz" >Housewives</span>
               </h2>
             </div>
           </div>
@@ -3098,41 +3295,62 @@
           <div class="elementor-h6d elementor-element-nk5 elementor-bd4">
             <div class="container-175">
               <h2 class="title-to4">
-                <span class="hig-aoz">Professionals</span>
+                <span class="profes hig-aoz">Professionals</span>
               </h2>
             </div>
           </div>
     
           <div class="elementor-h6d elementor-element-omr elementor-bd4">
             <div class="container-175">
-              Apne business ya career ko online tools ke through grow aur
+              Apne career ko online tools ke through grow aur
+              automate karo.
+            </div>
+          </div>
+        </div>
+        <div class="elementor-h6d elementor-element-krf e-con-b3e e-el7 e-jhb">
+          <div class="elementor-h6d elementor-element-nk5 elementor-bd4">
+            <div class="container-175">
+              <h2 class="title-to4">
+                <span class="enter hig-aoz">Entrepreneur</span>
+              </h2>
+            </div>
+          </div>
+    
+          <div class="elementor-h6d elementor-element-omr elementor-bd4">
+            <div class="container-175">
+              Apne business  ko online tools ke through grow aur
               automate karo.
             </div>
           </div>
         </div>
       </div>
-        <a
-          class="elementor-h6d elementor-element-fa1 e-con-b3e btn-t2z e-el7 e-jhb"
-        >
-          <div class="elementor-h6d elementor-element-v1t elementor-bd4">
-            <div class="container-175">
-              <h2 class="title-to4">YES, I WANT TO GROW MY BUSINESS ONLINE</h2>
-            </div>
-          </div>
-        </a>
+    </div>
+       
       </div>
     </div>
+    <div class="faq"> <a
+      class="elementor-h6d elementor-element-fa1 e-con-b3e btn-t2z e-el7 e-jhb"
+      href="https://beinggsocial.com/checkout/"
+    >
+      <div class="elementor-h6d elementor-element-v1t elementor-bd4">
+        <div class="container-175">
+          <h2 class="title-to4">YES, I WANT TO GROW MY BUSINESS ONLINE</h2>
+        </div>
+      </div>
+    </a></div>
     <div
       data-wpr-lazyrender="1"
-      class="elementor-ymy elementor-element-16i e-pey box-pei e-5se"
+      class="fhh elementor-ymy elementor-element-16i e-pey box-pei e-5se"
     >
       <div class="e-con-1hi">
         <div
           class="elementor-ymy elementor-element-w5y elementor-widget__width-wrp elementor-a8v"
         >
+        
           <div class="container-iok">
-            <h2 class="title-rdn">Frequently Asked Questions</h2>
+            <h2 class="title-rdn" style="margin-bottom: 20px;">Frequently Asked Questions</h2>
           </div>
+
         </div>
         <div
           class="elementor-ymy elementor-element-fcb elementor-a8v accordion-6ei"
@@ -3152,7 +3370,6 @@
                 <div id="ele-koy" class="content-zew elementor-8fl style-YTLZw">
                   <p>
                     हां, ये Zero से Start किया गया है – कोई prior knowledge नहीं चाहिए।
-
                   </p>
                 </div>
               </div>
@@ -3170,8 +3387,9 @@
                 </div>
                 <div id="ele-8y6" class="content-zew elementor-8fl style-dvhLO">
                   <p>Hindi-English Mix – आसान भाषा में समझाया गया है।
+
                   </p>
-                 
+                
                 </div>
               </div>
               <div class="accordion-3ih">
@@ -3183,7 +3401,7 @@
                     <span class="accordion-vz8"></span>
                   </span>
                   <a class="accordion-iq3"
-                    >Certificate मिलेगा?
+                    >Hindi-English Mix – आसान भाषा में समझाया गया है।
 
                     </a
                   >
@@ -3206,22 +3424,26 @@
       </div>
     </div>
     <div class="sticky-bottom-container">
-        <!-- Left Button -->
-         <a href="https://beinggsocial.com/course-bundle/champion-hindi-2/">
-        <button class="sticky-btn left-btn">Enroll to Master Class</button>
-    </a>
-        <!-- Animated Text -->
-        <div id="sticky-text" class="sticky-text">
-          <p>Enroll in 10+ Courses Today!</p>
-          <p>Access 149+ Video Lessons!</p>
-          <p>Get Lifetime Access to All Materials!</p>
-          <p>Earn Your Completion Certificate!</p>
-          <p>Join the Best Online Learning Platform!</p>
-          <p>Unlock 30+ Hours of Learning!</p>
-        </div>
+      <!-- Left Button -->
+      <a href="https://beinggsocial.com/course-bundle/champion-hindi-2/">
+          <button class="sticky-btn left-btn">Buy Now</button>
+      </a>
+  
+      <!-- Updated Animated Text -->
+      <div id="sticky-text" class="sticky-text">
+          <p>🎉 Limited Time Offer – Save ₹97,001!</p>
+          <p>Original Price: ₹1,00,000</p>
+          <p>Offer Price: ₹29,999</p>
+          <p>🔥 Today’s Price: ₹3,999
+            only!</p>
+          <p>🚨 Only 20 seats available at this price.</p>
+          <p>⏰ Enroll Now – Limited Time Offer</p>
+      </div>
+  </div>
+  
       
         <!-- Right Button -->
-         <a href="https://beinggsocial.com/digital-marketing/">        <button class="sticky-btn right-btn" style="margin-bottom:20px;">Explore Courses</button>
+         <a href="https://beinggsocial.com/digital-marketing/">       
          </a>
 
       </div>
